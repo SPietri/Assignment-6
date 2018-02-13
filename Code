@@ -1,0 +1,35 @@
+############################################################################################################
+#### Doing Math In R: Part 2 ###############################################################################
+############################################################################################################
+
+# Create two matrices  
+A <- matrix(c(2,0,1,3), ncol=2)
+B <- matrix(c(5,2,4,-1), ncol=2)
+A
+B
+
+# Add then subtract the two matrices. 
+A + B
+A - B
+
+#########################################################################################################
+#### Using the diag() function ##########################################################################
+#########################################################################################################
+
+# Using the diag() function to build a matrix of size 4 with the following values 
+# in the diagonal 4,1,2,3.
+C <- diag(c(4,1,2,3), nrow = 4, ncol= 4)
+C
+
+# The diag() function creates or extracts diagnols from a matrix. (Matloff pg. 197).
+# The code input is as: 
+# diag(c(numbers for diagnol), nrow = # of rows, ncol = # of columns)
+
+# For this next one I was given a matrix and told to recreate it.Here is how I did it. 
+D <- diag(3, nrow= 5) 
+D[1, 2:5]= 1 
+D[2:5, 1]= 2
+D
+
+# What I did above was create a matrix 5 by 5 with a diagpnal of all 3's. 
+# Then I input the values for row one and column two. 
